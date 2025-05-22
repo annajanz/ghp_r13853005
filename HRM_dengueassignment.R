@@ -1,5 +1,5 @@
 #load csv file
 df <- read.csv('dengue_assignment.csv')
 
-#number of cases with year = 2014
-length(which(df$year == 2014))
+dengue_cases_2014 <- sum(df$case_number[df$year == 2014])
+dengue_cases_2014
